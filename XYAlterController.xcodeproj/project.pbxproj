@@ -15,6 +15,8 @@
 		5081AEAA22F1254F00BD5FA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081AEA922F1254F00BD5FA5 /* main.m */; };
 		5081AEB422F1254F00BD5FA5 /* XYAlterControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081AEB322F1254F00BD5FA5 /* XYAlterControllerTests.m */; };
 		5081AEBF22F1254F00BD5FA5 /* XYAlterControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081AEBE22F1254F00BD5FA5 /* XYAlterControllerUITests.m */; };
+		5081AED122F1257500BD5FA5 /* YSCustomAlterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081AECD22F1257500BD5FA5 /* YSCustomAlterController.m */; };
+		5081AED222F1257500BD5FA5 /* UIViewController+YSAlterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081AECE22F1257500BD5FA5 /* UIViewController+YSAlterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5081AEBA22F1254F00BD5FA5 /* XYAlterControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYAlterControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5081AEBE22F1254F00BD5FA5 /* XYAlterControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAlterControllerUITests.m; sourceTree = "<group>"; };
 		5081AEC022F1254F00BD5FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5081AECD22F1257500BD5FA5 /* YSCustomAlterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCustomAlterController.m; sourceTree = "<group>"; };
+		5081AECE22F1257500BD5FA5 /* UIViewController+YSAlterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSAlterController.m"; sourceTree = "<group>"; };
+		5081AECF22F1257500BD5FA5 /* YSCustomAlterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCustomAlterController.h; sourceTree = "<group>"; };
+		5081AED022F1257500BD5FA5 /* UIViewController+YSAlterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSAlterController.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		5081AE9922F1254D00BD5FA5 /* XYAlterController */ = {
 			isa = PBXGroup;
 			children = (
+				5081AECC22F1257500BD5FA5 /* AlertController */,
 				5081AE9A22F1254D00BD5FA5 /* AppDelegate.h */,
 				5081AE9B22F1254D00BD5FA5 /* AppDelegate.m */,
 				5081AE9D22F1254D00BD5FA5 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				5081AEC022F1254F00BD5FA5 /* Info.plist */,
 			);
 			path = XYAlterControllerUITests;
+			sourceTree = "<group>";
+		};
+		5081AECC22F1257500BD5FA5 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				5081AECD22F1257500BD5FA5 /* YSCustomAlterController.m */,
+				5081AECE22F1257500BD5FA5 /* UIViewController+YSAlterController.m */,
+				5081AECF22F1257500BD5FA5 /* YSCustomAlterController.h */,
+				5081AED022F1257500BD5FA5 /* UIViewController+YSAlterController.h */,
+			);
+			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5081AE9F22F1254D00BD5FA5 /* ViewController.m in Sources */,
+				5081AED222F1257500BD5FA5 /* UIViewController+YSAlterController.m in Sources */,
 				5081AEAA22F1254F00BD5FA5 /* main.m in Sources */,
 				5081AE9C22F1254D00BD5FA5 /* AppDelegate.m in Sources */,
+				5081AED122F1257500BD5FA5 /* YSCustomAlterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
